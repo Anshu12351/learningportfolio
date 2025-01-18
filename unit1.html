@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="INDEX.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+<body>
+  <div class="Counter">
+
+    <div class="header">
+        <div class="heading1">Home</div>
+        <div class="heading2">About</div>
+        <form class="Searchbox">
+        <input type="search" name="search" placeholder="Search Here.....">
+        </form>
+        <div class="heading4"><a href="practicals.html"> Practical's</a></div>
+        <div class="heading5"><a href="Registration.html">Registration</a></div>
+        <div class="heading6"><a href="login.html">login</a></div>
+    </div>
+    
+    <div class="CBody">
+        <div class="leftsidebar">
+            <div class="dashbordBox">
+                <div class="dashbord">Dashbord</div>
+            </div>
+            <div class="ullist">
+                <div class="ullist"><a href="INDEX.html">Unit 1</a></div>
+            
+                <div class="optionlist">Introduction to PhP </div>
+                <div class="optionlist"><a href="#section1" class="textcolor">OOPs With PhP</a></div>
+                <div class="optionlist"><a href="#section2" class="textcolor">Vriables and Constants</a></div>
+                <div class="optionlist"><a href="#section3" class="textcolor">data Types and Operators</a></div>
+                <div class="optionlist"><a href="#section4" class="textcolor">Flow Control Statements</a></div>
+                <div class="optionlist"><a href="#section5" class="textcolor">Arrays</a></div>
+                <div class="optionlist"><a href="C:\Users\Administrator\Downloads\Introduction to PHP (2).pdf" class="textcolor">Download</a></div>
+            </div>
+            <div class="ullist">
+                <div class="ullist"><a href="unit2.html">Unit 2</a></div>
+                
+            </div>
+            <div class="ullist">
+                <div class="ullist"><a href="unit3.html">Unit 3</a></div>
+               
+            </div>
+            <div class="ullist">
+                <div class="ullist"><a href="Unit4.html">Unit 4</a></div>
+                
+            </div>
+            <div class="ullist">
+                <div class="ullist"><a href="unit5.html">Unit 5</a></div>
+               
+            </div>
+            <div class="ullist">
+                <div class="ullist">logOut</div>
+            </div>
+            
+        </div>
+        <div class="CenterBody">
+            <div class="unit1body">
+                <div class="unit1text">
+             <h1>-:Introduction to Php:-</h1>
+             <p>PHP (Hypertext Preprocessor) is a popular open-source server-side scripting language used primarily for web development. It allows developers to create dynamic and interactive web pages. PHP is especially known for its ability to integrate seamlessly with databases, particularly MySQL, and is widely used in content management systems (CMS) like WordPress.</p>
+              <h1>Key Features of PHP:-</h1><br>
+            <b>1.	Server-Side Scripting:</b><p> PHP runs on the web server, and the output is sent to the user's browser as HTML.<br></p>
+            <b>2.	Dynamic Content:</b><p> PHP is capable of generating dynamic page content, such as data from databases, user interactions, and more.<br></p>
+            <b>3.	Database Integration:</b><p>PHP has strong support for interacting with databases, allowing for the storage, retrieval, and manipulation of data. It works well with MySQL, PostgreSQL, and others.<br></p>
+            <b>4.	Cross-Platform:</b><p>PHP is platform-independent and works on various operating systems, including Windows, Linux, and macOS.<br></p>
+            <b>5.	Open Source:</b><p>PHP is free to use, with a large and active community of developers.<br></p>
+            <b>6.	Embedded into HTML:</b><p>PHP code can be embedded directly into HTML, making it easy to develop web pages and applications without a need for complex setups.<br></p>
+            <b>7.	Extensive Library Support:</b><p>PHP provides a wide range of built-in functions and libraries for performing tasks like string manipulation, file handling, session management, and more.<br></p>
+             <h1>How PHP Works:</h1>
+            <b>1.	Client Request:</b><p>A user sends a request via a web browser (such as accessing a URL).</p>
+            <b>2.	Server Processing:</b><p>The request is sent to the web server where the PHP script is located.</p>
+            <b>3.	PHP Execution:</b><p>The server processes the PHP code and executes it. Any dynamic content, such as fetching data from a database, is handled at this stage.</p>
+            <b>4.	Generate Output:</b><p>The result of the PHP script (often HTML) is sent back to the client’s browser.</p>
+            <b>5.	Display:</b><p>The browser displays the HTML result.</p>
+            <h1>Basic PHP Syntax:</h1>
+            <div class="phpsyntax"><br><br>
+                
+                    ?php<br>
+                      // This is a single-line comment<br>
+                      echo "Hello, World!"; // Outputs Hello, World! to the browser<br>
+                    ?>
+            </div><br>
+            <div class="oopsinphp" id="section1">
+                <h1>-: OOPs With PhP :-</h1>
+                <p>Object-Oriented Programming (OOP) in PHP is a programming paradigm that organizes software design around objects rather than functions and logic. Objects can contain data in the form of fields (often known as properties) and code in the form of methods. OOP allows for the creation of reusable and modular code.</p>
+                <h2>1. Classes and Objects</h2><br>
+                <b>Class:-</b><br><p> A blueprint for creating objects. A class defines properties and methods that objects of that class will have.</p>
+               <b>Object:-</b><br><p> An instance of a class.</p>
+               <h3>Example:-</h3>
+               <div class="phpsyntax"><br><br>
+                
+                <?php
+                class Car {   <br>
+                    // Properties<br>
+                    public $make;<br>
+                    public $model;<br>
+                    public $color;<br>
+                    // Constructor<br>
+                    public function __construct($make, $model, $color) { <br>
+                        $this->make = $make;<br>
+                        $this->model = $model;<br>
+                        $this->color = $color;<br>
+                    }<br>
+                    // Method<br>
+                    public function displayInfo() {<br>
+                        echo "This is a $this->color $this->make $this->model.";<br>
+                    }<br>
+                }<br>
+                // Creating an object<br>
+                $car1 = new Car("Toyota", "Corolla", "blue");<br>
+                $car1->displayInfo(); // Output: This is a blue Toyota Corolla.<br>
+                ?>
+        </div><br>
+       <h2>2. Encapsulation (Private and Getter/Setter Methods)</h2>
+       <p>Encapsulation involves hiding the internal state of an object and providing methods to access and modify it. Here’s how we can encapsulate properties using private and provide getter and setter methods.</p>
+       <h3>Example:-</h3>
+               <div class="phpsyntax"><br><br>
+                <?php<br>
+
+  class BankAccount {  <br>
+    private $balance;<br>
+    // Constructor<br>
+    public function __construct($balance) {<br>
+        $this->balance = $balance;<br>
+    }<br>
+    // Getter method<br>
+    public function getBalance() {<br>
+        return $this->balance;<br>
+    }<br>
+    // Setter method<br>
+    public function deposit($amount) {<br>
+        if ($amount > 0) {<br>
+            $this->balance += $amount;<br>
+        }<br>
+    }<br>
+    // Method to withdraw money<br>
+    public function withdraw($amount) {<br>
+        if ($amount > 0 && $this->balance >= $amount) {<br>
+            $this->balance -= $amount;<br>
+        }<br>
+    }<br>
+}<br>
+// Creating an object and using getter/setter methods<br>
+$account = new BankAccount(100);<br>
+$account->deposit(50);<br>
+echo "Balance: " . $account->getBalance() . "<br>";  // Output: Balance: 150<br>
+
+$account->withdraw(30);<br>
+echo "Balance after withdrawal: " . $account->getBalance();  // Output: Balance after withdrawal: 120<br>
+?><br>
+            </div><br>
+          <h2>  3. Inheritance</h2>
+        <p>Inheritance allows a class to inherit methods and properties from another class. A subclass can override methods from a parent class to customize or extend functionality.</p>
+        <h3>Example:-</h3>
+        <div class="phpsyntax"><br><br>
+            <?php<br>
+class Animal {<br>
+    public $name;<br>
+    // Constructor<br>
+    public function __construct($name) {<br>
+        $this->name = $name;<br>
+    }<br>
+    // Method<br>
+    public function speak() {<br>
+        echo "This animal makes a sound.<br>";<br>
+    }<br>
+}<br>
+class Dog extends Animal {<br>
+    // Overriding the speak method<br>
+    public function speak() {<br>
+        echo "$this->name says Woof!<br>";<br>
+    }<br>
+}<br>
+
+$dog = new Dog("Buddy");<br>
+$dog->speak();  // Output: Buddy says Woof!<br>
+?><br><br><br>
+            </div><br>
+            <h2>4. Polymorphism</h2>
+            <p>Polymorphism allows objects of different classes to be treated as objects of a common base class. It is especially useful when dealing with objects of different types in a uniform way.</p>
+            <h3>Example:-</h3>
+            <div class="phpsyntax"><br><br>
+                <?php<br>
+class Animal {<br>
+    public function speak() {<br>
+        echo "This animal makes a sound.<br>";<br>
+    }<br>
+}<br>
+class Dog extends Animal {<br>
+    public function speak() {<br>
+        echo "Woof!<br>";<br>
+    }<br>
+}<br>
+class Cat extends Animal {<br>
+    public function speak() {<br>
+        echo "Meow!<br>";<br>
+    }<br>
+}<br>
+// Polymorphism: Using the same method name for different classes<br>
+$animals = [new Dog(), new Cat()];<br>
+foreach ($animals as $animal) {<br>
+    $animal->speak();  // Output: Woof! Meow!<br>
+}<br>
+?><br><br><br>
+            </div><br>
+           <h2> 5. Abstract Classes</h2>
+<p>Abstract classes cannot be instantiated directly. They can have abstract methods (without implementation) that must be implemented in subclasses.</p>
+          <h3>Example:-</h3>
+        <div class="phpsyntax"><br><br>
+            <?php<br>
+            abstract class Animal {<br>
+                // Abstract method<br>
+                abstract public function sound();<br>
+                // Regular method<br>
+                public function sleep() {<br>
+                    echo "This animal is sleeping.<br>";<br>
+                }<br>
+            }<br>
+            class Dog extends Animal {<br>
+                public function sound() {<br>
+                    echo "Woof!<br>";<br>
+                }<br>
+            }<br>
+            class Cat extends Animal {<br>
+                public function sound() {<br>
+                    echo "Meow!<br>";<br>
+                }<br>
+            }<br>
+            $dog = new Dog();<br>
+            $dog->sound();  // Output: Woof!<br>
+            $dog->sleep();  // Output: This animal is sleeping.<br>
+            $cat = new Cat();<br>
+            $cat->sound();  // Output: Meow!<br>
+            ?><br>
+        </div><br>
+       <h2> 6. Interfaces</h2>
+<p>Interfaces define a contract that classes must follow. A class that implements an interface must implement all methods declared in the interface.</p>
+<h3>Example:-</h3>
+<div class="phpsyntax"><br><br>
+    <?php<br>
+
+interface AnimalInterface {<br>
+    public function sound();<br>
+}<br>
+
+class Dog implements AnimalInterface {<br>
+    public function sound() {<br>
+        echo "Woof!<br>";<br>
+    }<br>
+}<br>
+
+class Cat implements AnimalInterface {<br>
+    public function sound() {<br>
+        echo "Meow!<br>";<br>
+    }<br>
+}<br>
+
+$dog = new Dog();<br>
+$dog->sound();  // Output: Woof!<br>
+
+$cat = new Cat();<br>
+$cat->sound();  // Output: Meow!<br>
+?><br>
+</div><br>
+
+<h2>7. Static Methods and Properties</h2>
+<p>Static properties and methods are associated with the class rather than with instances of the class. They are accessed using the class name rather than the object. </p>          
+<h3>Example:-</h3>
+<div class="phpsyntax"><br><br>
+    <?php<br>
+
+class Calculator {<br>
+    public static $pi = 3.14159;<br>
+
+    public static function areaOfCircle($radius) {<br>
+        return self::$pi * $radius * $radius;<br>
+    }<br>
+}<br>
+
+echo Calculator::$pi;  // Output: 3.14159<br>
+echo "<br>";<br>
+echo Calculator::areaOfCircle(5);  // Output: 78.53975<br>
+?><br>
+</div><br>
+</div>
+<div class="oopsinphp" id="section2">
+    <h1>1. Variables in PHP</h1>
+   <p> A variable in PHP is a container used to store data, such as numbers, strings, or arrays. Variables are dynamically typed in PHP, meaning you don’t need to declare the data type when you assign a value to a variable.</p>
+   <h3>Syntax for Declaring Variables:-</h3>
+<div class="phpsyntax">
+    <br><br>
+    $variable_name = value;<br>
+    <br>
+</div><br>
+<b>
+• Variables in PHP start with a dollar sign ($).<br>
+• PHP variables are case-sensitive (i.e., $Var and $var are considered different).</b>
+<h3>Example of Variables:-</h3>
+<div class="phpsyntax">
+    <br><br>
+    <?php<br>
+    // Integer variable<br>
+    $age = 25;<br>
+    
+    // String variable<br>
+    $name = "John";<br>
+    
+    // Float variable<br>
+    $height = 5.9;<br>
+    
+    // Boolean variable<br>
+    $isStudent = true;<br>
+    
+    // Array variable<br>
+    $colors = array("Red", "Green", "Blue");<br>
+    
+    // Associative array variable<br>
+    $person = array("name" => "John", "age" => 25);<br>
+    
+    echo "Name: $name<br>";<br>
+    echo "Age: $age<br>";<br>
+    echo "Height: $height meters<br>";<br>
+    echo "Is Student: " . ($isStudent ? "Yes" : "No") . "<br>";<br>
+    echo "Colors: " . implode(", ", $colors) . "<br>";<br>
+    
+    // Accessing array values<br>
+    echo "Person's Name: " . $person['name'] . "<br>";<br>
+    ?><br><br><br>
+</div><br>
+<h2> Variables Scope</h2>
+<p>PHP variables can have different scopes, meaning they are accessible in different parts of a script. The common types of variable scope are:</p>
+
+<b>Local Scope:</b><p> Variables declared inside a function are local to that function.</p>
+<b>Global Scope:</b><p> Variables declared outside any function are globally accessible.</p>
+<b>Static Variables:</b><p> Variables that maintain their state across function calls.</p>
+<h3>Example: Variable Scope:-</h3>
+<div class="phpsyntax"><br><br>
+    <?php<br>
+
+    // Global variable<br>
+    $globalVar = "I am global";<br>
+    
+    function myFunction() {<br>
+        // Local variable<br>
+        $localVar = "I am local";<br>
+        
+        global $globalVar; // Accessing global variable inside the function<br>
+        echo $globalVar . "<br>";<br>
+        
+        // Local variable inside function<br>
+        echo $localVar . "<br>";<br>
+    }<br>
+    
+    myFunction();<br>
+    
+    // Uncommenting the line below will give an error because $localVar is local to the function<br>
+    // echo $localVar;  // Error: Undefined variable<br>
+    
+    ?><br><br><br>
+</div><br>
+
+<h2>3. Constants in PHP</h2>
+<p>A constant is an identifier (name) for a simple value. Unlike variables, constants cannot be changed or redefined after they are declared.</p>
+
+<b>Defining Constants in PHP</b>
+<p>PHP provides two ways to define constants:</p>
+
+<b>define() function:</b><p> It is used to define a constant.</p>
+<b>const keyword:</b><p> This can be used to define constants, but it is only available in classes or at the global level.</p>
+<h3>Syntax for Defining Constants:-</h3>
+<div class="phpsyntax"><br><br>
+    define("CONSTANT_NAME", value);
+    <br><br>
+</div><br>
+<h3>Example: Constants:-</h3>
+<div class="phpsyntax"><br><br>
+    <?php<br>
+
+// Defining a constant using define()<br>
+define("SITE_NAME", "My Awesome Website");<br>
+define("MAX_USERS", 100);<br>
+
+// Defining a constant using const (valid only at global level or within classes)<br>
+const VERSION = "1.0.0";<br>
+
+// Displaying constant values<br>
+echo "Welcome to " . SITE_NAME . "<br>";<br>
+echo "Max users allowed: " . MAX_USERS . "<br>";<br>
+echo "Version: " . VERSION . "<br>";<br>
+
+// Constants cannot be changed or redefined<br>
+// Uncommenting the following line will cause an error<br>
+// define("SITE_NAME", "Another Website");  // Error: Cannot redefine constant<br>
+?>
+    <br><br>
+</div><br>
+</div>
+<div class="datatypes" id="section3">
+<h1>Data Types and Operators</h1>
+<p>In programming, data types specify the kind of data that can be stored in a variable, while operators are symbols or keywords used to perform operations on data.</p>
+
+<h2>1. Data Types:</h2>
+Different programming languages might have different data types, but here are the most common types:
+<ul>
+<h3>1. Primitive Data Types:</h3>
+<li><b>Integer (int):</b> <p>Represents whole numbers (e.g., 1, -5, 100).</p></li>
+<li><b>Floating Point (float, double):</b> <p> Represents decimal numbers (e.g., 3.14, -0.001, 1.5).</p></li>
+<li><b>Character (char):</b> <p>Represents a single character (e.g., 'a', 'X', '9').
+<li><b>Boolean (bool): </b> <p>Represents a true or false value (e.g., true, false).
+<h3>2. Non-Primitive Data Types (Complex Data Types):</h3>
+<li><b>String (str):</b> <p> Represents a sequence of characters (e.g., "Hello", "123").</p></li>
+<li><b>Array:</b> <p> A collection of elements of the same type (e.g., [1, 2, 3], ["apple", "banana"]).</p></li>
+<h1>2. Operators:</h1>
+<p>Operators are symbols or keywords that perform operations on variables and values.</p>
+
+<h3>Arithmetic Operators:</h3>
+<p>Used to perform basic mathematical operations.</p>
+
+<li><b>+ (Addition):</b></li> <p>Adds two operands (e.g., a + b).</p>
+<li><b>- (Subtraction):</b></li> <p> Subtracts the second operand from the first (e.g., a - b).</p>
+<li><b>* (Multiplication):</b></li> <p> Multiplies two operands (e.g., a * b).</p>
+<li><b>/ (Division):</b></li> <p> Divides the first operand by the second (e.g., a / b).</p>
+<li><b>% (Modulus):</b></li> <p> Returns the remainder of the division (e.g., a % b).</p>
+<li><b>** (Exponentiation):</b></li> <p> Raises the first operand to the power of the second (e.g., a ** b).</p>
+<h3>Comparison Operators:</h3>
+<p>Used to compare values.</p>
+
+<li><b>== (Equal to):</b></li> <p> Checks if two operands are equal (e.g., a == b).</p>
+<li><b>!= (Not equal to):</b></li> <p> Checks if two operands are not equal (e.g., a != b).</p>
+<li><b>> (Greater than):</b></li> <p> Checks if the left operand is greater than the right (e.g., a > b).</p>
+<li><b>< (Less than):</b></li> <p> Checks if the left operand is less than the right (e.g., a < b).</p>
+<li><b>>= (Greater than or equal to):</b></li> <p> Checks if the left operand is greater than or equal to the right (e.g., a >= b).</p>
+<li><b><= (Less than or equal to):</b></li> <p> Checks if the left operand is less than or equal to the right (e.g., a <= b).</p>
+<h3>Logical Operators:</h3>
+<p>Used to combine conditional statements.</p>
+
+<li><b>&& (AND):</b></li> <p> Returns true if both operands are true (e.g., a && b).</p>
+<li><b>|| (OR):</b></li> <p> Returns true if at least one operand is true (e.g., a || b).</p>
+<li><b>! (NOT):</b></li> <p> Reverses the logical state of its operand (e.g., !a).</p>
+<h3>Assignment Operators:</h3>
+<p>Used to assign values to variables.</p>
+
+<li><b>= (Assign):</b></li> <p> Assigns the value of the right operand to the left operand (e.g., a = 5).</p>
+<li><b>+= (Add and assign):</b></li> <p> Adds the right operand to the left operand and assigns the result (e.g., a += b).</p>
+<li><b>-= (Subtract and assign):</b></li> <p> Subtracts the right operand from the left operand and assigns the result (e.g., a -= b).</p>
+<li><b>*= (Multiply and assign):</b></li> <p> Multiplies the left operand by the right operand and assigns the result (e.g., a *= b).</p>
+<li><b>/= (Divide and assign):</b></li> <p> Divides the left operand by the right operand and assigns the result (e.g., a /= b).</p>
+<h3>Increment and Decrement Operators:</h3>
+<p>Used to increase or decrease a variable’s value by 1.</p>
+
+<li><b>++ (Increment):</b></li> <p> Increases the value of a variable by 1 (e.g., a++ or ++a).</p>
+<li><b>-- (Decrement):</b></li> <p> Decreases the value of a variable by 1 (e.g., a-- or --a).</p>
+<h3>Bitwise Operators:</h3>
+<p>Used to perform bit-level operations.</p>
+
+<li><b>& (AND):</b></li> <p> Performs a bitwise AND operation.</p>
+<li><b>| (OR):</b></li> <p> Performs a bitwise OR operation.</p>
+<li><b>^ (XOR):</b></li> <p> Performs a bitwise XOR operation.</p>
+<li><b>~ (NOT):</b></li> <p> Inverts all the bits.</p>
+<li><b><< (Left Shift):</b></li> <p> Shifts bits to the left.</p>
+<li><b>>> (Right Shift):</b></li> <p> Shifts bits to the right.</p>
+<h3>Ternary Operator:</h3>
+<p>A shorthand for an if-else statement.</p>
+
+<li><b>condition ? expression1 :</b></li> <p> expression2 (e.g., x > y ? "x is greater" : "y is greater").</p>
+<h3>Special Operators:</h3>
+<li><b>typeof:</b></li> <p> Returns the type of a variable (e.g., typeof x).</p>
+<li><b>instanceof:</b></li> <p> Tests whether an object is an instance of a specific class or type (e.g., x instanceof MyClass).</p>
+</ul>
+</div>
+
+<div class="datatypes" id="section4">
+    <h1>Flow Control Statements</h1>
+    <p>In PHP, flow control statements are used to manage the flow of execution based on conditions, loops, and other logic. These are similar to flow control mechanisms in other programming languages like if, else, while, for, break, continue, and return. Below, I'll explain the various flow control statements in PHP with examples.</p>
+
+<h3>1. Conditional Statements:</h3>
+<li><b>If Statement:</b></li><p>The if statement is used to execute a block of code only if a specified condition is true.</p>
+<div class="phpsyntax"><br><br>
+<?php<br>
+$age = 18;<br>
+if ($age >= 18) {<br>
+    echo "You are eligible to vote.";<br>
+}<br>
+?><br><br></div>
+<h3>If-Else Statement:</h3><p>The if-else statement allows you to define an alternative block of code to execute when the condition is false.</p>
+
+<div class="phpsyntax"><br><br>
+<?php<br>
+$age = 16;<br>
+if ($age >= 18) {<br>
+    echo "You are eligible to vote.";<br>
+} else {<br>
+    echo "You are not eligible to vote.";<br>
+}<br>
+?><br>
+<br><br></div>
+<h3>If-Elif-Else Statement:</h3><p>The if-elseif-else statement allows checking multiple conditions. If the first condition is false, the program checks the next condition and so on.</p>
+
+<div class="phpsyntax"><br><br>
+<?php<br>
+$score = 75;<br>
+if ($score >= 90) {<br>
+    echo "Grade A";<br>
+} elseif ($score >= 75) {<br>
+    echo "Grade B";<br>
+} elseif ($score >= 50) {<br>
+    echo "Grade C";<br>
+} else {<br>
+    echo "Grade F";<br>
+}<br>
+?><br></div>
+<h1>2. Looping Statements:</h1>
+<h3>For Loop:</h3>
+<p>The for loop is used when you know in advance how many times you want to execute a statement or a block of code.</p>
+
+<div class="phpsyntax"><br><br>
+<?php<br>
+for ($i = 0; $i < 5; $i++) {<br>
+    echo "The value of i is: " . $i . "<br>";<br>
+}<br>
+?><br><br></div>
+<h3>While Loop:</h3>
+<p>The while loop executes as long as the specified condition evaluates to true.</p>
+
+<div class="phpsyntax"><br><br>
+<?php<br>
+$i = 0;<br>
+while ($i < 5) {<br>
+    echo "The value of i is: " . $i . "<br>";<br>
+    $i++;<br>
+}<br>
+?>
+<br><br></div>
+<h3>Do-While Loop:</h3>
+<p>The do-while loop is similar to the while loop, except that the condition is checked after the code block has been executed, ensuring that the block runs at least once.</p>
+
+<div class="phpsyntax"><br><br>
+<?php<br>
+$i = 0;<br>
+do {<br>
+    echo "The value of i is: " . $i . "<br>";<br>
+    $i++;<br>
+} while ($i < 5);<br>
+?>
+<br><br></div>
+<h1>3. Break and Continue Statements:</h1>
+<h3><li>Break Statement:</li></h3>
+<p>The break statement is used to exit from a loop prematurely, regardless of the loop's condition.</p>
+
+<div class="phpsyntax"><br><br>
+<?php<br>
+for ($i = 0; $i < 10; $i++) {<br>
+    if ($i == 5) {<br>
+        break;  // Exit the loop when $i equals 5<br>
+    }<br>
+    echo "The value of i is: " . $i . "<br>";<br>
+}<br>
+?><br></div>
+<h3><li>Continue Statement:</li></h3>
+<p>The continue statement skips the current iteration of the loop and moves to the next iteration.</p>
+
+<div class="phpsyntax"><br><br>
+<?php<br>
+for ($i = 0; $i < 5; $i++) {<br>
+    if ($i == 3) {<br>
+        continue;  // Skip the iteration when $i equals 3<br>
+    }<br>
+    echo "The value of i is: " . $i . "<br>";<br>
+}<br>
+?><br></div>
+<h3>4. Return Statement:</h3>
+<p>The return statement is used in functions to return a value and exit the function.</p>
+
+<div class="phpsyntax"><br><br>
+<?php<br>
+function add($a, $b) {<br>
+    return $a + $b;  // Return the sum of $a and $b<br>
+}<br>
+
+$result = add(5, 3);<br>
+echo "The result is: " . $result;<br>
+?><br><br></div>
+<h3>5. Switch Statement:</h3>
+<p>The switch statement is used to perform different actions based on multiple conditions. It's an alternative to using many if-else statements.</p>
+
+<div class="phpsyntax"><br><br>
+<?php<br>
+$day = 2;<br>
+
+switch ($day) {<br>
+    case 1:<br>
+        echo "Monday";<br>
+        break;<br>
+    case 2:<br>
+        echo "Tuesday";<br>
+        break;<br>
+    case 3:<br>
+        echo "Wednesday";<br>
+        break;<br>
+    case 4:<br>
+        echo "Thursday";<br>
+        break;<br>
+    case 5:<br>
+        echo "Friday";<br>
+        break;<br>
+    default:<br>
+        echo "Invalid day";<br>
+}<br>
+?><br><br></div>
+<h4>In this example, the output will be Tuesday, since $day is equal to 2.</h4>
+
+<h3>6. Example Combining Flow Control Statements:</h3>
+<div class="phpsyntax"><br><br>
+<?php<br>
+$score = 85;<br>
+$attendance = 75;<br>
+// Check if student passed based on both score and attendance<br>
+if ($score >= 50 && $attendance >= 80) {<br>
+    echo "The student passed.";<br>
+} elseif ($score >= 50 && $attendance < 80) {<br>
+    echo "The student passed, but attendance is low.";<br>
+} else {<br>
+    echo "The student failed.";<br>
+}<br>
+// Loop to print numbers 1 to 10, skip number 5, and break when number 8 is reached<br>
+for ($i = 1; $i <= 10; $i++) {<br>
+    if ($i == 5) {<br>
+        continue;  // Skip printing number 5<br>
+    }<br>
+    if ($i == 8) {<br>
+        break;  // Exit loop when $i is 8<br>
+    }<br>
+    echo $i . "<br>";<br>
+}<br>
+?><br><br></div>       
+</div>
+
+<div class="oopsinphp" id="section5">
+    <h1>Arrays in PHP</h1>
+    <p>An array is a special variable in PHP that can hold multiple values. Rather than declaring multiple variables for each value, you can store all values in a single array variable. PHP supports two types of arrays:</p>
+    <ol>
+    <li>Indexed Arrays (Numeric keys)</li>
+    <li>Associative Arrays (Custom keys)</li>
+    <li>Multidimensional Arrays (Arrays containing other arrays)</li></ol>
+    <h2>1. Indexed Arrays:</h2>
+    <p>Indexed arrays are arrays where each element is assigned a numeric index, starting from 0.</p>
+    
+    <h3>Example of Indexed Array:</h3>
+    <div class="phpsyntax"><br><br>
+    <?php<br>
+    // Declaring an indexed array<br>
+    $fruits = array("Apple", "Banana", "Orange", "Mango");<br>
+    // Accessing array elements by index<br>
+    echo $fruits[0]; // Outputs: Apple<br>
+    echo "<br>";<br>
+    echo $fruits[2]; // Outputs: Orange<br>
+    ?><br><br></div>
+    <li><b>Modifying Indexed Array:</b></li>
+    <p>You can modify elements in an indexed array by referencing the index.</p>
+    <div class="phpsyntax"><br><br>
+    <?php<br>
+    $fruits = array("Apple", "Banana", "Orange", "Mango");<br>
+    $fruits[1] = "Grapes"; // Changing 'Banana' to 'Grapes'<br>
+    echo $fruits[1]; // Outputs: Grapes<br>
+    ?><br><br></div>
+    <li><b>Adding Elements to Indexed Array:</b></li>
+    <p>You can add elements to an indexed array using [].</p>
+    <div class="phpsyntax"><br><br>
+    <?php<br>
+    $fruits = array("Apple", "Banana", "Orange");<br>
+    $fruits[] = "Mango"; // Adds 'Mango' to the end of the array<br>
+    echo $fruits[3]; // Outputs: Mango<br>
+    ?><br><br></div>
+    <h2>2. Associative Arrays:</h2>
+    <p>Associative arrays are arrays where each element is associated with a custom key (usually a string). Instead of numeric indices, you can use meaningful keys for each element.</p>
+   <h3> Example of Associative Array:</h3>
+    <div class="phpsyntax"><br><br>
+    <?php<br>
+    // Declaring an associative array<br>
+    $person = array("name" => "John", "age" => 25, "city" => "New York");<br>
+    // Accessing elements by key<br>
+    echo $person["name"]; // Outputs: John<br>
+    echo "<br>";<br>
+    echo $person["age"];  // Outputs: 25<br>
+    ?><br><br></div>
+    <li><b>Modifying Associative Array:</b></li>
+    <p>You can modify elements in an associative array by referencing the key.</p>
+    <div class="phpsyntax"><br><br>
+    <?php<br>
+    $person = array("name" => "John", "age" => 25, "city" => "New York");<br>
+    $person["age"] = 30; // Changing 'age' from 25 to 30<br>
+    echo $person["age"]; // Outputs: 30<br>
+    ?><br><br></div>
+    <li><b>Adding Elements to Associative Array:</b></li>
+    <p>You can add new key-value pairs to an associative array.</p>
+    <div class="phpsyntax"><br><br>
+    <?php<br>
+    $person = array("name" => "John", "age" => 25);<br>
+    $person["city"] = "New York"; // Adding a new key-value pair<br>
+    echo $person["city"]; // Outputs: New York<br>
+    ?><br><br></div>
+    <h2>3. Multidimensional Arrays:</h2>
+    <p>A multidimensional array is an array that contains one or more arrays. These arrays can represent more complex data structures like tables or matrices.</p>
+    <div class="phpsyntax"><br><br>
+    <?php<br>
+    // Declaring a multidimensional array<br>
+    $contacts = array(<br>
+        array("name" => "John", "phone" => "1234567890", "email" => "john@example.com"),<br>
+        array("name" => "Jane", "phone" => "9876543210", "email" => "jane@example.com"),<br>
+        array("name" => "Tom", "phone" => "5555555555", "email" => "tom@example.com")<br>
+    );<br>
+    // Accessing elements of a multidimensional array<br>
+    echo $contacts[0]["name"]; // Outputs: John<br>
+    echo "<br>";<br>
+    echo $contacts[1]["phone"]; // Outputs: 9876543210<br>
+    ?><br><br></div>
+   <li><b> Modifying Multidimensional Array:</b></li>
+   <p> You can modify elements in a multidimensional array by specifying the row and column.</p>
+   <div class="phpsyntax"><br><br>
+    <?php<br>
+    $contacts = array(<br>
+        array("name" => "John", "phone" => "1234567890", "email" => "john@example.com"),<br>
+        array("name" => "Jane", "phone" => "9876543210", "email" => "jane@example.com")<br>
+    );<br>
+    $contacts[0]["email"] = "john_new@example.com"; // Changing John's email<br>
+    echo $contacts[0]["email"]; // Outputs: john_new@example.com<br>
+    ?><br></div>
+    <li><b>Adding Elements to Multidimensional Array:</b></li>
+    <p>You can also add new rows or columns.</p>
+    <div class="phpsyntax"><br><br>
+    <?php<br>
+    $contacts = array(<br>
+        array("name" => "John", "phone" => "1234567890", "email" => "john@example.com"),<br>
+        array("name" => "Jane", "phone" => "9876543210", "email" => "jane@example.com")<br>
+    );<br>
+    $contacts[] = array("name" => "Tom", "phone" => "5555555555", "email" => "tom@example.com"); // Adding a new row<br>
+    echo $contacts[2]["name"]; // Outputs: Tom<br>
+    ?><br></div>
+    <h1>4. Array Functions in PHP:</h1>
+    <li><b>PHP offers several useful functions to manipulate arrays:</b></li>
+    <ol>
+   <li><b>count():</b></li><p> Returns the number of elements in an array.</p>
+   <li><b>array_push():</b></li><p> Adds one or more elements to the end of an array.</p>
+    <li><b>array_pop():</b></li><p> Removes the last element of an array.</p>
+    <li><b>array_merge():</b></li><p> Merges two or more arrays.</p>
+    <li><b>in_array():</b></li><p> Checks if a value exists in an array.</p>
+    <li><b>array_keys():</b></li><p> Returns all the keys of an array.</p>
+    <li><b>array_values():</b></li><p> Returns all the values of an array.</p>
+    </ol>
+    <h3>Example of Using Array Functions:</h3>
+    <div class="phpsyntax"><br><br>
+    <?php<br>
+    $fruits = array("Apple", "Banana", "Orange");<br>
+    // Count the number of elements in the array<br>
+    echo count($fruits); // Outputs: 3<br>
+    // Add a new element to the array<br>
+    array_push($fruits, "Mango");<br>
+    echo "<br>" . $fruits[3]; // Outputs: Mango<br>
+    // Check if a value exists in the array<br>
+    if (in_array("Banana", $fruits)) {<br>
+        echo "<br>Banana is in the array.";<br>
+    }<br>
+    // Merge two arrays<br>
+    $vegetables = array("Carrot", "Cabbage");<br>
+    $all_items = array_merge($fruits, $vegetables);<br>
+    print_r($all_items);<br>
+    ?><br><br></div>
+</div>
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+  </div>
+  <div class="rightsidebar"></div>
+    </div>
+
+  <div class="footer">
+     
+<div class="footer-content-right">
+ <a href="https://github.com/Anshu12351/Java_Program_Prectice"><i class="fa-brands fa-github"></i></a>
+ <a href="https://www.twitter.com/DigitalOcean"><i class="fa-brands fa-staylinked"></i></a>
+ <a href="https://www.twitter.com"><i class="fa-brands fa-instagram"></i></a>
+</div>
+</div>
+</body>
+</html>
+
+
+
+<!-- /* -->

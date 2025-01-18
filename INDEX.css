@@ -1,0 +1,161 @@
+.Counter{
+    height: 900px;
+    width: 1300px;
+    background-color: blue;
+}
+    /* ----------------------------------Header----------------------------------------*/
+.header{
+    height: 100px;
+    width: 1300px;
+    background-color: beige;
+}
+.heading1,.heading2,.heading4,.heading5,.heading6{
+ float: left;
+ margin-top: 45px;
+ padding-left: 130px;
+ font-size: 20px;
+ color: rgb(27, 25, 25);
+ 
+}
+.Searchbox{
+    float: right;
+    margin-top: 45px;
+ padding-right: 100px;
+ font-size: 20px;
+}
+
+        /* ----------------------------------body----------------------------------------*/
+.CBody{
+    height: 700px;
+    width: 1300px;
+}
+.Bodyimage{
+    height: 700px;
+    width: 800px;
+    
+}
+
+.leftsidebar{
+    height: 700px;
+    width: 250px;
+    background-color: rgb(67, 68, 68);
+    float:inline-start; 
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+            /* ----------------------------------Dashboard----------------------------------------*/
+
+
+.dashbordBox{
+height:40px;
+  width: 250px;
+ padding-bottom: 50px;
+font: 20px;  
+background-color: rgb(72, 204, 165);
+}
+.dashbord{
+padding-top: 25px;
+margin-left: 50px;
+font-size: 35px; 
+font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+
+a {
+    color: black;
+    text-decoration: none;
+  }
+.ullist{
+    padding-top: 30px;
+    margin-left: 25px;
+    font-size: 25px;
+    color:azure
+}
+.optionlist{
+    padding-top: 30px;
+    margin-left: 40px;
+    font-size: 20px;
+}
+.CenterBody{
+    height: 700px;
+    width: 800px;
+    background-color:white;
+    float:left; 
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.ollist{
+    
+    margin-top: 10px;
+    font: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.rightsidebar{
+    height: 700px;
+    width: 250px;
+    background-color: aqua;
+    float:inline-end;
+    
+}
+
+.prectical1{
+    height:600px;
+    width: 600px;
+    border-radius: 10px;
+    background-color: rgb(167, 154, 154);
+}
+          /* ----------------------------------Footer----------------------------------------*/
+.footer{
+    height: 200px;
+    width: 1300px;
+    background-color: rgb(121, 121, 119);
+}
+
+
+.footer-content-right {
+  padding-right:40px;
+  margin-top:20px;
+  float:right;
+  font-size: 50px;
+}
+
+.icon-style {
+  height:40px;
+  margin-left:20px;
+  margin-top:5px;
+}
+
+.icon-style:hover {
+  background-color:yellow;
+  padding:5px;
+  
+}
+           /*--------------------------Unit 1 center body code---------------------------*/
+.unit1body{
+    margin-left: 20px;
+    border-radius: 50px;
+    height:auto;
+    width: 750px;
+    background-color: rgb(45, 194, 194);
+}
+.unit1text{
+    height:auto;
+    width: 700px;
+    text-align: justify;
+    padding-top: 20px;
+    margin-left: 20px;
+    border-radius: 50px;
+}
+.phpsyntax{
+    width: 700;
+    height:auto;
+    background-color:whitesmoke;
+}
+.oopsinphp{
+    height:auto;
+    width: 700px;
+   
+}
+.textcolor{
+    color: aliceblue;
+}
